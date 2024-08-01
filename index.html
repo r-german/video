@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        body{padding-top:  10vh;}
+		video{
+    		width: 32.5vw;
+    		cursor: pointer;
+    }
+    
+    .video-ons{
+    		bottom: -73%;
+    		left: 5vw;
+    		transform: rotate(22deg);
+    }
+    
+		.video-ct{
+    		bottom: -56.4%;
+    		left: 36.8vw;
+    		transform: rotate(-16deg);
+    }
+    
+    .video-s{
+    		bottom: -71%;
+    		right: 5vw;
+    		transform: rotate(-30deg);
+    }
+    
+    @media(min-aspect-ratio: 9/5){
+    		video{width: 30.8vw;}
+        .video-ons{left: 7.5vw;}
+        .video-ct{left: 37.8vw;}
+        .video-s{right: 7.5vw;}
+    }
+    
+    @media(min-aspect-ratio: 2/1){
+    		video{width: 29.1vw;}
+        .video-ons{left: 9.6vw;}
+        .video-ct{left: 38.3vw;}
+        .video-s{
+        		bottom: -70.5%;
+        		right: 9.6vw;
+        }
+    }
+    
+    @media(min-aspect-ratio: 11/5){
+    		video{width: 27.4vw;}
+        .video-ons{left: 11.9vw;}
+        .video-ct{left: 38.8vw;}
+        .video-s{right: 11.9vw;}
+    }
+    
+    @media(orientation: portrait){
+    		video{
+                display: block;
+        		position: relative;
+                margin: 0 auto;
+            width: 55vw;
+        }
+    		.video-ons{
+        		z-index: 2;
+        		left: 0;
+        		transform: rotate(4deg);
+        }
+				.video-ct{
+        		z-index: 1;
+        		left: 0;
+        		transform: rotate(-7deg);
+            margin-top: -3vh;
+            margin-bottom: -3vh;
+        }
+    		.video-s{
+        		right: 0;
+        		transform: rotate(4deg);
+        }
+    }
+    
+    @media(max-aspect-ratio: 7/10){
+    		video{width: 61vw;}
+    }
+    
+    @media(max-aspect-ratio: 3/5){
+    		video{width: 75vw;}
+    }
+    
+    @media(max-aspect-ratio: 1/2){
+    		video{width: 80vw;}
+    }
+    </style>
+
+    <video class="video-ons" preload="auto" muted="true" playsinline>
+		<source src="creative_therapy.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        document.querySelector('video').addEventListener('mouseover', function(){
+            document.querySelector('.video-ons').loop = true;
+            document.querySelector('video').playbackRate = 1.0;
+            document.querySelector('video').play();
+        });
+        document.querySelector('video').addEventListener('mouseout', function(){
+            document.querySelector('.video-ons').loop = false;
+            document.querySelector('video').playbackRate = 2.0;
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if(!isSafari) {
+                const videos = document.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.autoplay = false;
+                });
+            }
+        });
+    </script> -->
+    <video width="600" height="100%" autoplay loop muted playsinline>
+        <source 
+          src="https://rotato.netlify.app/alpha-demo/movie-hevc.mov" 
+          type='video/mp4; codecs="hvc1"'>
+        <source 
+          src="https://rotato.netlify.app/alpha-demo/movie-webm.webm" 
+          type="video/webm">
+      </video>
+      <video width="600" height="100%" autoplay loop muted playsinline>
+        <source 
+          src="https://rotato.netlify.app/alpha-demo/movie-webm.webm" 
+          type="video/webm">
+        <source 
+          src="https://rotato.netlify.app/alpha-demo/movie-hevc.mov" 
+          type='video/mp4; codecs="hvc1"'>
+      </video>
+</body>
+</html>
